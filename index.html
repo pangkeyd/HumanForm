@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form W5D5</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="captcha()">
+
+	<div class="container">
+		<h2>Registration Form</h2>
+		<form id="forms" action="#">
+			<table>
+				<tr>
+					<td>Username :</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="user" type="text">
+						<p id="inputUser"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>Password :</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="password" type="password">
+						<p id="inputPass"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>Confirm Password :</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="conPassword" type="password">
+						<p id="inputConPass"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>Email :</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="email" type="email">
+						<p id="inputEmail"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>Confirm Email :</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="conEmail" type="email">
+						<p id="inputConEmail"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>Are you human?</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="captcha" type="text" readonly>
+						<a onclick="captcha()" href="#">Refresh</a> 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="inputCaptcha" type="text">
+						<p id="inputUsCaptcha"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center>
+							<input id="submit" type="submit">
+						</center>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
